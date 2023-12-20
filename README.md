@@ -1,1 +1,1 @@
-# Final project for IBM Deep Learning and Reinforcement Learning course
+# Projects completed for courses in IBM Machine Learning Professional Certificate
