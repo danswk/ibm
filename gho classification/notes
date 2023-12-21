@@ -1,1 +1,24 @@
+# EDA
+- Thinness (in young people up to 19 years) has strongest positive correlation with positive class ('Developing') of target variable ('Status')
+  - Checks out as developing countries are more likely to suffer from food scarcity
+- Human Development Index in terms of income composition of resources has strongest negative correlation
+  - Checks out as both variables track the same characteristic but 'Status' variable is the categorical representation
 
+# LOGISTIC REGRESSION
+- Regularisation has little effect on model performance though L2-regularised model did slightly outperform
+
+# K-NEAREST NEIGHBOURS
+- 'Developed' class predicted best when considering 2 nearest neighbours
+- 'Developing' class predicted best when considering only single nearest neighbour
+
+# RANDOM FOREST
+- Alcohol (consumption per capita in litres) has greatest effect on predictions by random forest classifier
+  - Quite unexpected as I did not personally associate alcohol consumption with development status
+- HIV/AIDS (deaths per 1,000 live births (0-4 years)) has least effect on predictions
+  - Implies deaths from HIV/AIDS are not more common in developing countries compared to developed countries or vice-versa to a significant degree
+
+# EXTRA TREES
+- Best-performing classifier of those tested
+- Positive 'Developed' class predicted with 96% precision, 99% recall, 98% F-1 score
+- Negative 'Developing' class predicted with 100% precision, 99% recall, 100% F-1 score
+- Model accuracy: 99%
