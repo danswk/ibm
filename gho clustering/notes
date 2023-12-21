@@ -1,6 +1,6 @@
-- Dataset: Global Health Observatory (GHO)
-- Author: World Health Organization (WHO)
-- Source: kaggle.com/datasets/lashagoch/life-expectancy-who-updated
+# DATASET: Global Health Observatory (GHO)
+# AUTHOR: World Health Organization (WHO)
+# SOURCE: kaggle.com/datasets/lashagoch/life-expectancy-who-updated
 ~
 - Dataset is best organised into 2 clusters
 - k-means and (agglomerative) hierarchal clustering models perform best
