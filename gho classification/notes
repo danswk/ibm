@@ -9,7 +9,7 @@
   - Checks out as both variables track the same characteristic but 'Status' variable is the categorical representation
 
 # LOGISTIC REGRESSION
-- Regularisation has little effect on model performance though L2-regularised model did slightly outperform
+- Regularisation has little effect on model performance though L2-regularised model did slightly outperform others
 
 # K-NEAREST NEIGHBOURS
 - 'Developed' class predicted best when considering 2 nearest neighbours
