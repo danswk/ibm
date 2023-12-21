@@ -1,1 +1,2 @@
-# Projects completed for courses in IBM Machine Learning Professional Certificate
+- Projects completed for IBM Machine Learning courses
+- Many are first attempts at implementing newly learned concepts
