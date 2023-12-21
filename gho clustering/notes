@@ -1,9 +1,9 @@
 # DATASET: Global Health Observatory (GHO)
 # AUTHOR: World Health Organization (WHO)
 # SOURCE: kaggle.com/datasets/lashagoch/life-expectancy-who-updated
-~
-- Dataset is best organised into 2 clusters
+  ~
+- Dataset best organised into 2 clusters
 - k-means and (agglomerative) hierarchal clustering models perform best
 - Model with chosen elbow point does not necessarily produce highest score (애매하고 선택은 주관적이기 때문)
 - Silhouette score does not strictly decrease with number of clusters but periodically increases slightly
-- Alcohol consumption contributes most to country’s classification as ‘developed’; GDP contributes most to ‘developing’
+- Alcohol consumption contributes most to classification into 'Developed' minority class; GDP (per capita) most to 'Developing' majority
