@@ -1,7 +1,11 @@
 # DATASET: Global Health Observatory (GHO)
 # AUTHOR: World Health Organization (WHO)
-# SOURCE: kaggle.com/datasets/lashagoch/life-expectancy-who-updated
-  ~
+# SOURCE: kaggle.com/datasets/kumarajarshi/life-expectancy-who
+  # UPDATE: Dataset contains many inaccuracies fixed in updated dataset, reducing EDA: kaggle.com/datasets/lashagoch/life-expectancy-who-updated
+    - Misclassified countries reclassified by 2014 UN standard: un.org/en/development/desa/policy/wesp/wesp_current/2014wesp_country_classification.pdf
+    - Null data removed, missing data filled with closest 3-year average or average of region
+    - Countries missing 4< data columns (e.g. South Sudan, North Korea) omitted
+~
 # LOGISTIC REGRESSION
 - Regularisation has little effect on model performance though L2-regularised model did slightly outperform others
 - Thinness (in young people up to 19 years) has strongest positive correlation with majority class ('Developing') of target variable ('Status')
