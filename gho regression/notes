@@ -1,1 +1,23 @@
+# DATASET: Global Health Observatory (GHO)
+# AUTHOR: World Health Organization (WHO)
+# SOURCE: kaggle.com/datasets/kumarajarshi/life-expectancy-who
+~
+# LINEAR
+- Adding (210) polynomial features reduced test set MSE by ~31% (16.960130 ▶ 11.666972), improved R^2 score by ~6% (0.834491 ▶ 0.886146)
+- Highest R^2 score of models tested; regularisation harms model performance (too much bias introduced)
 
+# LASSO
+- Model is worse fit than horizontal line (R^2<0) for alpha range 1e-9~1e-4
+- Best performance for alpha=1e-1=0.1
+
+# RIDGE
+- Model is worse fit than horizontal line (R^2<0) for alpha range 1e-9~1e-4
+- Very poor (R^2<-1) performance for alpha range 1e-9~1e-5
+- Best performance for alpha=1e0=1
+
+# ELASTIC NET
+- Model is worse fit than horizontal line (R^2<0) for alpha range 1e-9~1e-6
+  - Tightest range of R^2 scores of models tested
+- Best performance for alpha=1e-1=0.1
+~
+2023/10
