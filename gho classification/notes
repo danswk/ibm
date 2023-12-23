@@ -8,14 +8,14 @@
 ~
 # LOGISTIC REGRESSION
 - Regularisation has little effect on model performance though L2-regularised model did slightly outperform others
-- Thinness (in young people up to 19 years) has strongest positive correlation with majority class ('Developing') of target variable ('Status')
+- Thinness (in young people up to 19 years) has strongest positive correlation with log-odds of target variable ('Status') belonging to positive class ('Developing')
   - Checks out as developing countries more likely to suffer from food scarcity
 - Human Development Index (in terms of income composition of resources) has strongest negative correlation
   - Checks out as both features track same characteristic but 'Status' variable is categorical representation
 
 # K-NEAREST NEIGHBOURS
-- 'Developed' class predicted best when considering 2 nearest neighbours
-- 'Developing' class predicted best when considering only single nearest
+- Minority ('Developed') class predicted best when considering 2 nearest neighbours
+- Majority ('Developing') class predicted best when considering only single nearest
 
 # RANDOM FOREST
 - Alcohol (consumption per capita in litres) has greatest effect on predictions by random forest classifier
@@ -25,8 +25,15 @@
 
 # EXTRA TREES
 - Best-performing classifier of those tested
-- Positive 'Developed' class predicted with 96% precision, 99% recall, 98% F-1 score
-- Negative 'Developing' class predicted with 100% precision, 99% recall, 100% F-1 score
+- Minority class predicted with 96% precision, 99% recall, 98% F-1 score
+- Majority class predicted with 100% precision, 99% recall, 100% F-1 score
 - Model accuracy: 99%
+~
+# 앞으로 참고하고 주의할 것
+- Use updated dataset in future projects
+- Minority class is typically regarded as positive (1) class for imbalanced datasets but LinearRegression(CV) object assigns [0,1] to ['Developed','Developing'] alphabetically
+  - Attribute 'classes_' shows 'array(['Developed', 'Developing'], dtype=object)'
+  - Confusion matrix can be reordered by adding parameter 'labels=['Developing','Developed']'
+  - Unsure how to invariably designate 'Developed' as positive class to see coefficients WRT log-odds of data belonging to developed country
 ~
 11/2023
