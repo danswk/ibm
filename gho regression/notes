@@ -8,19 +8,21 @@
 
 # LASSO
 - Model is worse fit than horizontal line (R^2<0) for alpha range 1e-9~1e-4
-- Best performance for alpha=1e-1=0.1
+- Best performance (R^2=0.874703) for alpha=1e-1=0.1
 
 # RIDGE
 - Model is worse fit than horizontal line (R^2<0) for alpha range 1e-9~1e-4
 - Very poor (R^2<-1) performance for alpha range 1e-9~1e-5
-- Best performance for alpha=1e0=1
+- Best performance (R^2=0.830862) for alpha=1e0=1
 
 # ELASTIC NET
 - Model is worse fit than horizontal line (R^2<0) for alpha range 1e-9~1e-6
   - Tightest range of R^2 scores of models tested
-- Best performance for alpha=1e-1=0.1
+- Best performance (R^2=0.878522) for alpha=1e-1=0.1
 ~
 # 앞으로 참고하고 주의할 것
-  - graph visualisation
+  - Scatter plot decent for visualising accuracy/consistency of predictions but not ideal for gauging performance across different models
+    - Plots are too similar to compare
+    - Could add LOBF and residual lines or plot only residuals
 ~
 10/2023
