@@ -1,4 +1,4 @@
-# DATASET: Global Health Observatory (GHO)
+# DATASET: Global Health Observatory (GHO) [OUTDATED]
 # AUTHOR: World Health Organization (WHO)
 # SOURCE: kaggle.com/datasets/kumarajarshi/life-expectancy-who
 ~
@@ -21,8 +21,8 @@
 - Best performance (R^2=0.878522) for alpha=1e-1=0.1
 ~
 # 앞으로 참고하고 주의할 것
-  - Scatter plot decent for visualising accuracy/consistency of predictions but not ideal for gauging performance across different models
-    - Plots are too similar to compare
-    - Could add LOBF and residual lines or plot only residuals
+- Scatter plot decent for visualising accuracy/consistency of predictions but not ideal for gauging performance across different models
+  - Plots are too similar to compare
+  - Could add LOBF and residual lines or plot only residuals
 ~
 10/2023
