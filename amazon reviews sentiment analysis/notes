@@ -11,7 +11,7 @@
 
 # 앞으로 참고하고 주의할 것
 * Model has 1M+ parameters
-  - Fitting model takes 40m+
+  - Fitting model takes 1h+
   - Could simplify layers and compare performance to see if model is unnecessarily deep
 - Initially tried to fit model without padding train, test sequences
   - Using batch_size without padding fails because all sequences in batch must be same length
