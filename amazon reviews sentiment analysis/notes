@@ -1,1 +1,10 @@
+# DATASET: Amazon Reviews for Sentiment Analysis
+# SOURCE: kaggle.com/datasets/bittlingmayer/amazonreviews
+~
+# OBSERVATIONS
+- Initially tried to fit model without padding train, test sequences
+  - Using batch_size without padding fails because all sequences in batch must be same length
 
+
+# 앞으로 참고하고 주의할 것
+- define sep validation set?
