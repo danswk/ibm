@@ -4,7 +4,8 @@
 # OBSERVATIONS
 - Initially tried to fit model without padding train, test sequences
   - Using batch_size without padding fails because all sequences in batch must be same length
-
+- Accuracy fluctuated 0.9464~0.9465 for majority of epoch 2
+  - too many train samples?
 
 # 앞으로 참고하고 주의할 것
 - define sep validation set?
