@@ -2,11 +2,11 @@
 # SOURCE: kaggle.com/datasets/bittlingmayer/amazonreviews
 ~
 # MODEL PERFORMANCE
-- Accuracy score: 0.9488
+- Accuracy score: 0.9463
   - ~95% of predictions correct
-- F1 score: 0.9486
+- F1 score: 0.9470
   - Good balance between precision, recall
-- ROC-AUC score: 0.9877
+- ROC-AUC score: 0.9874
   - Clear discrimination between negative (0), positive (1) classes
 
 # 앞으로 참고하고 주의할 것
@@ -17,8 +17,8 @@
   - Using batch_size without padding fails because all sequences in batch must be same length
   - Tested different methods of preparing data for model fitting
     - convert_to_tensor: only takes sequences of same length but train, test data not padded
-- Accuracy fluctuated 0.9464~0.9466 for majority of epoch 2
-  * Too many training samples for the degree of payoff
+- Accuracy fluctuated 0.9463~0.9465 for majority of epoch 2
+  * Too many training samples for degree of payoff
 - Tested different methods of scoring model performance
   - classification_report: only takes binary values but test_labels_pred values are float
 ~
