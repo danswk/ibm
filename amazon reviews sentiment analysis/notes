@@ -21,5 +21,6 @@
   * Too many training samples for degree of payoff
 - Tested different methods of scoring model performance
   - classification_report: only takes binary values but test_labels_pred values are float
+- Setting input_dim=num_words in model definition seems redundant if fitting model only to data already tokenised to feature max. (num_words) words
 ~
 1/2024
