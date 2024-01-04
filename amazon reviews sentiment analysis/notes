@@ -22,5 +22,6 @@
 - Tested different methods of scoring model performance
   - classification_report: only takes binary values but test_labels_pred values are float
 - Setting input_dim=num_words in model definition seems redundant if fitting model only to data already tokenised to feature max. (num_words) words
+  - However could tweak num_words value and compare performance to see min. unique words required for certain score above certain threshold
 ~
 1/2024
