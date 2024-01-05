@@ -31,6 +31,7 @@
 ~
 # 앞으로 참고하고 주의할 것
 - Use updated dataset in future projects
+- Check for, remove unnecessary imports 예 np imported but not used
 - Minority class is typically regarded as positive (1) class for imbalanced datasets but LinearRegression(CV) object assigns [0,1] to ['Developed','Developing'] alphabetically
   - Attribute 'classes_' shows 'array(['Developed', 'Developing'], dtype=object)'
   - Confusion matrix can be reordered by adding parameter 'labels=['Developing','Developed']'
