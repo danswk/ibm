@@ -24,4 +24,6 @@
 - Setting input_dim=num_words in model definition seems redundant if fitting model only to data already tokenised to feature max. (num_words) words
   - However could tweak num_words value and compare performance to see min. unique words required for certain score above certain threshold
 ~
+Remove .ipynb_checkpoints folder with rm -rf .ipynb_checkpoints
+~
 1/2024
